@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.habittracker.MainActivity;
 import com.example.habittracker.R;
 public class Loginform extends AppCompatActivity {
 
@@ -14,7 +16,8 @@ public class Loginform extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.habitadd);
+        setContentView(R.layout.loginform);
+
         Button loginbutton = (Button) findViewById(R.id.loginfinal);
         loginbutton.setOnClickListener(new View.OnClickListener()
         {
@@ -30,7 +33,7 @@ public class Loginform extends AppCompatActivity {
         {
             @Override
             public void onClick (View v){
-                Intent myintent =new Intent(v.getContext(),Fragment1.class);
+                Intent myintent =new Intent(v.getContext(), MainActivity.class);
                 startActivity(myintent);
             }
         });

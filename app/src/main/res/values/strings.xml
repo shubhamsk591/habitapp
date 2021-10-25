@@ -20,9 +20,17 @@
     <string name="LoginPassword">Password</string>
 
     <string name="Cancel">Cancel</string>
-
     <string name="Register">New user register</string>
 
     <string name="WelcomeLogin">Welcome after login</string>
     <string name="ListHere">Add list of habit</string>
+    <string name="Habit_Details">Enter the details of habit to be added </string>
+    <string name="Titlename">Enter the title</string>
+    <string name="Goal">Enter Goal/Purpose</string>
+    <string name="Ok">OK</string>
+    <string name="alertmessage">Alert message</string>
+    <string name="alerttitle">Add Habit</string>
+    <string name="questionforsureaddhabit">Do you want to add this habit</string>
+    <string name="Addhabitclickok">You have choose OK for add Habit</string>
+    <string name="AddhabitclickCancel">You have choose Cancel for add Habit</string>
 </resources>

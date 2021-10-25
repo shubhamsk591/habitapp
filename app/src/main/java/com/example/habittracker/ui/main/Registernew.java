@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.habittracker.MainActivity;
 import com.example.habittracker.R;
 public class Registernew extends AppCompatActivity {
     @Override
@@ -21,7 +23,7 @@ public class Registernew extends AppCompatActivity {
         {
             @Override
             public void onClick (View v){
-                Intent myintent =new Intent(v.getContext(),Fragment1.class);
+                Intent myintent =new Intent(v.getContext(), MainActivity.class);
                 startActivity(myintent);
             }
         });

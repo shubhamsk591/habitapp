@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.habittracker.ui.main.Fragment1;
+import com.example.habittracker.ui.main.Habitform;
 import com.example.habittracker.ui.main.MotivationInsight;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -41,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, R.string.add_habit, Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent myintent =new Intent(view.getContext(), Habitform.class);
+                startActivity(myintent);
             }
         });
         Button motivation = (Button) findViewById(R.id.motivation_button);
